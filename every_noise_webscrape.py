@@ -82,6 +82,7 @@ def main():
 
     df = pd.DataFrame(rows_list)
     print(df)
+    df.to_csv("city_artists_file.txt", index=False)
 
 
 if __name__ == "__main__":

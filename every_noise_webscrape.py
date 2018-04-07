@@ -36,9 +36,8 @@ def main():
     city_urls = get_cities()
     city_urls = city_urls[1:]
     # remove duplicate city names
-    del city_urls[35]
-    del city_urls[6]
-    del city_urls[4]
+    del city_urls[35, 6, 4]
+
     # city_urls_test = city_urls[:5]
     city_state_to_artists = {}
     # for city_url in city_urls_test:

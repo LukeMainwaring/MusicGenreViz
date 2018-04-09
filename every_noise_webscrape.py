@@ -36,8 +36,10 @@ def main():
     city_urls = get_cities()
     city_urls = city_urls[1:]
     # remove duplicate city names
-    del city_urls[35, 6, 4]
-
+    # del city_urls[35, 6, 4]
+    del city_urls[35]
+    del city_urls[6]
+    del city_urls[4]
     # city_urls_test = city_urls[:5]
     city_state_to_artists = {}
     # for city_url in city_urls_test:
@@ -58,7 +60,7 @@ def main():
     for city_state in city_state_to_artists.keys():
         city_info = city_state.split(' ')
         # state with two words
-        if city_info[-2] + ' ' +  city_info[-1] in states:
+        if len(city_info) > 1 and city_info[-2] + ' ' +  city_info[-1] in states:
             state = city_info[-2] + ' ' +  city_info[-1]
             city = ' '.join(city_info[:-2])
             city_to_state[city] = state
@@ -81,7 +83,7 @@ def main():
 
     df = pd.DataFrame(rows_list)
     print(df)
-    df.to_csv("city_artists_file.txt", index=False)
+    df.to_csv("city_artists_file3.txt", index=False)
 
 
 if __name__ == "__main__":

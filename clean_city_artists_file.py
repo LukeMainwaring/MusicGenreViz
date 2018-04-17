@@ -147,7 +147,7 @@ def main():
     
     # create_city_state_list('city_artists_file_cleaned.txt', 'city_states.txt', 'zip_codes_states.csv')
 
-    clean_spotify_artists_genres('artists_genres_test.csv', 'artists_genres_cleaned.csv')
+    # clean_spotify_artists_genres('artists_genres_test.csv', 'artists_genres_cleaned.csv')
 
 if __name__ == "__main__":
     main()

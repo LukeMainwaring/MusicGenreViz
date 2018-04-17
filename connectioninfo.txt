@@ -1,0 +1,6 @@
+sqlplus ‘cis550@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP) (HOST=http://musicgenreviz.cmxt8otwhjqc.us-http://east-2.rds.amazonaws.com)(PORT=1521)) (CONNECT_DATA=(SID=CIS550)))’
+
+instance name: musicgenreviz
+overall name: CIS550
+username: cis550
+password: cis550eklh

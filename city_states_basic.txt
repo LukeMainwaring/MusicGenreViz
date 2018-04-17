@@ -1,0 +1,342 @@
+City,State
+Albuquerque,New Mexico
+Anaheim,California
+Ann Arbor,Michigan
+Arlington,Texas
+Asheville,North Carolina
+Atlanta,Georgia
+Aurora,Colorado
+Austin,Texas
+Bakersfield,California
+Baldwin Park,California
+Baltimore,Maryland
+Bath,Maine
+Baton Rouge,Louisiana
+Bayamon,Puerto Rico
+Berkeley,California
+Beverly Hills,California
+Birmingham,Alabama
+Boise,Idaho
+Boston,Massachusetts
+Boulder,Colorado
+Bronx,New York
+Brooklyn,New York
+Buffalo,New York
+Cambridge,Massachusetts
+Charlotte,North Carolina
+Cheyenne,Wyoming
+Chicago,Illinois
+Cincinnati,Ohio
+Cleveland,Ohio
+Clifton,New Jersey
+College Station,Texas
+Colorado Springs,Colorado
+Columbus,Ohio
+Corona,California
+Dallas,Texas
+Dayton,Ohio
+Decatur,Georgia
+Denver,Colorado
+Des Moines,Iowa
+Detroit,Michigan
+Dublin,Ohio
+Durham,North Carolina
+El Paso,Texas
+Las Vegas,Nevada
+Lincoln,Nebraska
+Littleton,Colorado
+Long Beach,California
+Los Angeles,California
+Louisville,Kentucky
+Lubbock,Texas
+Lynchburg,Virginia
+Madison,Wisconsin
+Maywood,California
+Memphis,Tennessee
+Mesa,Arizona
+Mesquite,Texas
+Washington District of Columbia,N/A
+Whittier,California
+Wilburton,Oklahoma
+Wilmington,California
+Worcester,Massachusetts
+Abilene,Texas
+Acworth,Georgia
+Alexandria,Virginia
+Alpharetta,Georgia
+Amarillo,Texas
+Ames,Iowa
+Amherst,Massachusetts
+Antioch,California
+Arlington,Virginia
+Athens,Georgia
+Auburn,Washington
+Barrigada Guam,N/A
+Bend,Oregon
+Berwyn,Illinois
+Blacksburg,Virginia
+Bozeman Montana,N/A
+Brownsville,Texas
+Buena Park,California
+Burlington Vermont,N/A
+Camden,New Jersey
+Carolina,Puerto Rico
+Carrollton,Texas
+Cedar Rapids,Iowa
+Chandler,Arizona
+Chapel Hill,North Carolina
+Charlottesville,Virginia
+Chattanooga,Tennessee
+Chula Vista,California
+Cleveland,Tennessee
+Columbia,South Carolina
+Costa Mesa,California
+Cumming,Georgia
+Cypress,Texas
+Daly City,California
+Denton,Texas
+Downey,California
+Dubuque,Iowa
+Eau Claire,Wisconsin
+Edmond,Oklahoma
+Elizabeth,New Jersey
+Erlanger,Kentucky
+Escondido,California
+Eugene,Oregon
+Fairborn,Ohio
+Farmington,Michigan
+Fayetteville,North Carolina
+Federal Way,Washington
+Fontana,California
+Fort Collins,Colorado
+Fort Lauderdale,Florida
+Fort Myers,Florida
+Fort Wayne,Indiana
+Fort Worth,Texas
+Gainesville,Florida
+Garden City,New York
+Garland,Texas
+Gilbert,Arizona
+Grand Prairie,Texas
+Greensboro,North Carolina
+Greensburg,Pennsylvania
+Gwynn Oak,Maryland
+Hagatna,N/A
+Harrisonburg,Virginia
+Hayward,California
+Hialeah,Florida
+Hollywood,Florida
+Honolulu,Hawaii
+Houston,Texas
+Humble,Texas
+Huntington Beach,California
+Indianapolis,Indiana
+Irvine,California
+Irving,Texas
+Ithaca,New York
+Jackson,Mississippi
+Jamaica,New York
+Janesville,Wisconsin
+Jersey City,New Jersey
+Kansas City,Missouri
+Kent,Washington
+Killeen,Texas
+Kirkland,Washington
+Kissimmee,Florida
+Knoxville,Tennessee
+La Mirada,California
+La Puente,California
+Lafayette,Louisiana
+Lakeland,Florida
+Laredo,Texas
+Laurel,Maryland
+Lawrenceville,Georgia
+Lexington,Kentucky
+Little Rock Arkansas,N/A
+Livermore,California
+Manassas,Virginia
+Mcallen,Texas
+Mckinney,Texas
+Menlo Park,California
+Metairie,Louisiana
+Miami,Florida
+Midland,Texas
+Milwaukee,Wisconsin
+Mobile,Alabama
+Montgomery,Alabama
+Moreno Valley,California
+Murfreesboro,Tennessee
+Naperville,Illinois
+New Orleans,Louisiana
+Newark,New Jersey
+Newport News,Virginia
+North Attleboro,Massachusetts
+North Hollywood,California
+Ocala,Florida
+Oceanside,California
+Odessa,Texas
+Ogden,Utah
+Oklahoma City,Oklahoma
+Omaha,Nebraska
+Ontario,California
+Orange,California
+Orem,Utah
+Orlando,Florida
+Oxnard,California
+Pacoima,California
+Palmdale,California
+Paterson,New Jersey
+Pella,Iowa
+Penn Valley,California
+Philadelphia,Pennsylvania
+Phoenix,Arizona
+Pomona,California
+Pompano Beach,Florida
+Providence,Rhode Island
+Provo,Utah
+Puyallup,Washington
+Queens Village,New York
+Raleigh,North Carolina
+Rancho Cucamonga,California
+Redding,California
+Redmond,Washington
+Reno,Nevada
+Renton,Washington
+Richardson,Texas
+Richmond,Virginia
+Ridgeland,Mississippi
+Riverside,California
+Rochester,New York
+Sachse,Texas
+Saint Paul,Minnesota
+Saint Petersburg,Florida
+Salt Lake City,Utah
+San Angelo,Texas
+San Antonio,Texas
+San Bernardino,California
+San Diego,California
+San Francisco,California
+San Jose,California
+San Juan,Puerto Rico
+San Leandro,California
+San Marcos,Texas
+Santa Ana,California
+Santa Cruz,California
+Santa Monica,California
+Sarasota,Florida
+Savannah,Georgia
+Scottsdale,Arizona
+Seattle,Washington
+Silver Spring,Maryland
+Sioux Falls South Dakota,N/A
+Somerville,Massachusetts
+Spokane,Washington
+Spring,Texas
+Springfield,Missouri
+State College,Pennsylvania
+Staten Island,New York
+Stockton,California
+Stone Mountain,Georgia
+Stoughton,Wisconsin
+Syracuse,New York
+Tacoma,Washington
+Tampa,Florida
+Temecula,California
+Tempe,Arizona
+The Colony,Texas
+Toledo,Ohio
+Trenton,New Jersey
+Tucson,Arizona
+Tulsa,Oklahoma
+Tuscaloosa,Alabama
+Vallejo,California
+Van Nuys,California
+Vancouver,Washington
+Waltham,Massachusetts
+West Covina,California
+West Lafayette,Indiana
+West Palm Beach,Florida
+Wichita,Kansas
+Wilmington,North Carolina
+Yigo,N/A
+Akron,Ohio
+Anchorage,Alaska
+Arlington Heights,Illinois
+Auburn,Alabama
+Augusta,Georgia
+Baldwin,Iowa
+Bloomington,Indiana
+Bradenton,Florida
+Brighton,Massachusetts
+Burleson,Texas
+Charleston,South Carolina
+Chico,California
+Clemson,South Carolina
+College Park,Maryland
+Compton,California
+Corpus Christi,Texas
+Coventry,Rhode Island
+Covina,California
+Crossville,Tennessee
+East Lansing,Michigan
+Elk Grove,California
+Elmhurst,Illinois
+Fargo North Dakota,N/A
+Fayetteville Arkansas,N/A
+Flagstaff,Arizona
+Franklin,Tennessee
+Fremont,California
+Fresno,California
+Frisco,Texas
+Fullerton,California
+Gaithersburg,Maryland
+Garden Grove,California
+Greenville,South Carolina
+Hattiesburg,Mississippi
+Huntsville,Alabama
+Hyattsville,Maryland
+Iowa City,Iowa
+Jacksonville,Florida
+Katy,Texas
+Lancaster,Pennsylvania
+Marietta,Georgia
+Marion,Ohio
+Missoula Montana,N/A
+Mount Sterling,Ohio
+Naples,Florida
+New Braunfels,Texas
+New Haven,Connecticut
+Norcross,Georgia
+Norfolk,Virginia
+North Bergen,New Jersey
+North Hills,California
+Northridge,California
+Norwalk,California
+Oakland,California
+Overland Park,Kansas
+Palatine,Illinois
+Passaic,New Jersey
+Pensacola,Florida
+Perris,California
+Pharr,Texas
+Pittsburgh,Pennsylvania
+Plano,Texas
+Portland,Oregon
+Rexburg,Idaho
+Roanoke,Virginia
+Rockford,Illinois
+Roseville,California
+Sacramento,California
+Salinas,California
+San Luis Obispo,California
+San Mateo,California
+Southgate,Michigan
+Stamford,Connecticut
+Stillwater,Oklahoma
+Tallahassee,Florida
+Taylor,Michigan
+Torrance,California
+Waipahu,Hawaii
+West New York,New Jersey
+Westminster,South Carolina
+Woodland Hills,California

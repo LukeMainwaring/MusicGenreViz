@@ -122,7 +122,24 @@ def create_city_state_list(filename, city_state_file, geodata_file):
     
 
 def clean_spotify_artists_genres(filename, clean_filename):
-    pass
+    
+    visited = set()
+
+    with open(filename, 'r') as f1, open(clean_filename, 'w') as f2:
+
+        for line in f1:
+            artists_data = line.split(',')
+            artist_id = artists_data[-1]
+            if artists_data[1] == '[]':
+                # print(line)
+                continue
+            else:
+                if artist_id not in visited:
+                    visited.add(artist_id)
+                    # print(line)
+                    f2.write(line)
+                # print(line)
+            # print(artists_data[-1])
 
 def main():
     # remove_empty_cities("city_artists_file.txt", "city_artists_file2.txt", 
@@ -130,6 +147,7 @@ def main():
     
     # create_city_state_list('city_artists_file_cleaned.txt', 'city_states.txt', 'zip_codes_states.csv')
 
+    clean_spotify_artists_genres('artists_genres_test.csv', 'artists_genres_cleaned.csv')
 
 if __name__ == "__main__":
     main()

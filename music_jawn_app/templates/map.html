@@ -1,27 +1,29 @@
-<!DOCTYPE html>
-<html>
-  <head>
+{% extends 'base.html' %}
+
+{% block head %}
+    {{ super() }}
     <style>
-       #map {
-        height: 400px;
-        width: 100%;
-       }
+        #map {
+            height: 400px;
+            width: 100%;
+        }
     </style>
-  </head>
-  <body>
+{% endblock %}
+
+{% block content %}
     <h3>My Google Maps Demo</h3>
     <div id="map"></div>
     <script>
-      function initMap() {
-        var center = {lat: 39.8283, lng: -98.5795};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
-          center: center
-        });
+        function initMap() {
+            var center = {lat: 39.8283, lng: -98.5795};
+            var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 4,
+              center: center
+            });
 
-        var up = {lat: 45.8283, lng: -98.5795};
+            var up = {lat: 45.8283, lng: -98.5795};
 
-        var contentString = '<div id="content">'+
+            var contentString = '<div id="content">'+
             '<div id="siteNotice">'+
             '</div>'+
             '<h1 id="firstHeading" class="firstHeading">Uluru</h1>'+
@@ -42,23 +44,23 @@
             '</div>'+
             '</div>';
 
-        var infowindow = new google.maps.InfoWindow({
-          content: contentString
-        });
+            var infowindow = new google.maps.InfoWindow({
+              content: contentString
+            });
 
-        var marker = new google.maps.Marker({
-          position: up,
-          map: map
-        });
+            var marker = new google.maps.Marker({
+              position: up,
+              map: map
+            });
 
-        marker.addListener('click', function() {
-          infowindow.open(map, marker);
-        });
-
-      }
+            marker.addListener('click', function() {
+              infowindow.open(map, marker);
+            });
+        }
     </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2BC4cPIZ4KkOSIVa7lsjfy1I6ZoMiLJA&callback=initMap">
-    </script>
-  </body>
-</html>
+{% endblock %}
+
+{% block footer %}
+    {{ super() }}
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2BC4cPIZ4KkOSIVa7lsjfy1I6ZoMiLJA&callback=initMap"></script>
+{% endblock %}

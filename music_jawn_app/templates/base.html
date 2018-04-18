@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% block head %}
+        <title>{% block title %}{{ title }}{% endblock %} | Music Jawn</title>
+    {% endblock %}
+</head>
+<body>
+    <ul>
+        <li><a href='/'>Home</a></li>
+        <li><a href='/map'>Map</a></li>
+        <li><a href='/timeline'>Timeline</a></li>
+    </ul>
+    
+    <div id='content'>
+        {% block content %}{% endblock %}
+    </div>
+
+    <hr>
+    
+    {% block footer %}
+        <footer>
+            <p>Made by Kerry Hollis, Evan Jonokuchi, Luke Mainwaring, and Hannah Stulberg. Spring 2017.</p>
+        </footer>
+    {% endblock %}
+
+</body>
+</html>

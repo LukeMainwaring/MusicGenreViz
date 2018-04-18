@@ -3,4 +3,4 @@
 # compiled python
 *.pyc
 # jupyter notebook checkpoints
-.ipynb_checkpoints
+.ipynb_checkpoints/

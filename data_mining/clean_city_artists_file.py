@@ -182,7 +182,6 @@ def map_city_to_genres(artists_genres_file, city_state_artists_file, outfile):
             if state != 'N/A':
                 state = state_codes[state]
             city = city_info[-2]
-            # print('city:', city, 'state:', state)
             artists_info = line.split('[')[1].split(']')[0]
             artists_info = artists_info.replace("'", "")
             artists = artists_info.split(',')
@@ -200,14 +199,6 @@ def map_city_to_genres(artists_genres_file, city_state_artists_file, outfile):
                     artist_ids_to_city[artist_id] = [city]
                 else:
                     artist_ids_to_city[artist_id].append(city)
-                # print(artist_id)
-            # if artist_to_genres[artist]:
-            #    print()
-    # print(artist_ids_to_city)
-
-    # for artist_id in artist_ids_to_city.keys():
-        # print(artist_id, ': ', artist_ids_to_city[artist_id])
-        # print(artist_id, ': ', list(enumerate(artist_ids_to_city[artist_id])))
     
     # print(artist_ids_to_city)
 

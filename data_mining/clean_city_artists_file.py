@@ -4,6 +4,66 @@ import os
 import pandas as pd
 
 
+states = {
+        'AK': 'Alaska',
+        'AL': 'Alabama',
+        'AR': 'Arkansas',
+        'AS': 'American Samoa',
+        'AZ': 'Arizona',
+        'CA': 'California',
+        'CO': 'Colorado',
+        'CT': 'Connecticut',
+        'DC': 'District of Columbia',
+        'DE': 'Delaware',
+        'FL': 'Florida',
+        'GA': 'Georgia',
+        'GU': 'Guam',
+        'HI': 'Hawaii',
+        'IA': 'Iowa',
+        'ID': 'Idaho',
+        'IL': 'Illinois',
+        'IN': 'Indiana',
+        'KS': 'Kansas',
+        'KY': 'Kentucky',
+        'LA': 'Louisiana',
+        'MA': 'Massachusetts',
+        'MD': 'Maryland',
+        'ME': 'Maine',
+        'MI': 'Michigan',
+        'MN': 'Minnesota',
+        'MO': 'Missouri',
+        'MP': 'Northern Mariana Islands',
+        'MS': 'Mississippi',
+        'MT': 'Montana',
+        'NA': 'National',
+        'NC': 'North Carolina',
+        'ND': 'North Dakota',
+        'NE': 'Nebraska',
+        'NH': 'New Hampshire',
+        'NJ': 'New Jersey',
+        'NM': 'New Mexico',
+        'NV': 'Nevada',
+        'NY': 'New York',
+        'OH': 'Ohio',
+        'OK': 'Oklahoma',
+        'OR': 'Oregon',
+        'PA': 'Pennsylvania',
+        'PR': 'Puerto Rico',
+        'RI': 'Rhode Island',
+        'SC': 'South Carolina',
+        'SD': 'South Dakota',
+        'TN': 'Tennessee',
+        'TX': 'Texas',
+        'UT': 'Utah',
+        'VA': 'Virginia',
+        'VI': 'Virgin Islands',
+        'VT': 'Vermont',
+        'WA': 'Washington',
+        'WI': 'Wisconsin',
+        'WV': 'West Virginia',
+        'WY': 'Wyoming'
+}
+
 def remove_empty_cities(filename1, filename2, filename3, clean_filename):
 
     with open(clean_filename, 'w') as f1, open(filename1, 'r') as f2, open(filename2, 'r') as f3, open(filename3, 'r') as f4:
@@ -37,66 +97,6 @@ def remove_empty_cities(filename1, filename2, filename3, clean_filename):
                         f1.write(line)
 
 def create_city_state_list(filename, city_state_file, geodata_file):
-
-    states = {
-            'AK': 'Alaska',
-            'AL': 'Alabama',
-            'AR': 'Arkansas',
-            'AS': 'American Samoa',
-            'AZ': 'Arizona',
-            'CA': 'California',
-            'CO': 'Colorado',
-            'CT': 'Connecticut',
-            'DC': 'District of Columbia',
-            'DE': 'Delaware',
-            'FL': 'Florida',
-            'GA': 'Georgia',
-            'GU': 'Guam',
-            'HI': 'Hawaii',
-            'IA': 'Iowa',
-            'ID': 'Idaho',
-            'IL': 'Illinois',
-            'IN': 'Indiana',
-            'KS': 'Kansas',
-            'KY': 'Kentucky',
-            'LA': 'Louisiana',
-            'MA': 'Massachusetts',
-            'MD': 'Maryland',
-            'ME': 'Maine',
-            'MI': 'Michigan',
-            'MN': 'Minnesota',
-            'MO': 'Missouri',
-            'MP': 'Northern Mariana Islands',
-            'MS': 'Mississippi',
-            'MT': 'Montana',
-            'NA': 'National',
-            'NC': 'North Carolina',
-            'ND': 'North Dakota',
-            'NE': 'Nebraska',
-            'NH': 'New Hampshire',
-            'NJ': 'New Jersey',
-            'NM': 'New Mexico',
-            'NV': 'Nevada',
-            'NY': 'New York',
-            'OH': 'Ohio',
-            'OK': 'Oklahoma',
-            'OR': 'Oregon',
-            'PA': 'Pennsylvania',
-            'PR': 'Puerto Rico',
-            'RI': 'Rhode Island',
-            'SC': 'South Carolina',
-            'SD': 'South Dakota',
-            'TN': 'Tennessee',
-            'TX': 'Texas',
-            'UT': 'Utah',
-            'VA': 'Virginia',
-            'VI': 'Virgin Islands',
-            'VT': 'Vermont',
-            'WA': 'Washington',
-            'WI': 'Wisconsin',
-            'WV': 'West Virginia',
-            'WY': 'Wyoming'
-    }
 
     state_codes = {v: k for k, v in states.items()}
     # print(state_codes)
@@ -141,13 +141,84 @@ def clean_spotify_artists_genres(filename, clean_filename):
                 # print(line)
             # print(artists_data[-1])
 
-def map_city_to_genres(artists_genres_file, city_state_artist_file, outfile):
+def map_city_to_genres(artists_genres_file, city_state_artists_file, outfile):
 
     # create mapping from artist to artist's genres
-    artist_to_genre = {}
+    artist_to_genres = {}
+    artist_to_id = {}
     with open(artists_genres_file, 'r') as f:
+        next(f) # skip column titles
         for line in f:
-            print(line)
+            # map from artist to id
+            artist_info = line.split(',')
+            spotify_id = artist_info[-1].strip('\n')
+            name = artist_info[-2]
+            artist_to_id[name] = spotify_id
+    
+            # map from artist to genres
+            # UNNECESSARY for now
+            genre_info1 = line.split('[')[1]
+            genre_info2 = genre_info1.split(']')[0]
+            genre_info2 = genre_info2.replace("'", "")
+            genres = genre_info2.split(',')
+            genres = [word.lstrip() for word in genres]
+            artist_to_genres[name] = genres
+
+    # print(artist_to_genres)
+    # print(artist_to_id)
+
+    # create mapping from city to all artist ids
+    # city_to_genres = {}
+    city_to_artists = {}
+    artist_ids_to_city = {}
+
+    state_codes = {v: k for k, v in states.items()}
+
+    with open(city_state_artists_file, 'r') as f:
+        next(f)
+        for line in f:
+            city_info = line.split(',')
+            state = city_info[-1].strip('\n')
+            if state != 'N/A':
+                state = state_codes[state]
+            city = city_info[-2]
+            # print('city:', city, 'state:', state)
+            artists_info = line.split('[')[1].split(']')[0]
+            artists_info = artists_info.replace("'", "")
+            artists = artists_info.split(',')
+            artists = [word.lstrip() for word in artists]
+            city_to_artists[(city,state)] = artists
+    # print(city_to_artists)
+
+    for city in city_to_artists.keys():
+        city_artists = city_to_artists[city]
+        # print(city_artists)
+        for artist in city_artists:
+            if artist in artist_to_id:
+                artist_id = artist_to_id[artist]
+                if artist_id not in artist_ids_to_city:
+                    artist_ids_to_city[artist_id] = [city]
+                else:
+                    artist_ids_to_city[artist_id].append(city)
+                # print(artist_id)
+            # if artist_to_genres[artist]:
+            #    print()
+    # print(artist_ids_to_city)
+
+    # for artist_id in artist_ids_to_city.keys():
+        # print(artist_id, ': ', artist_ids_to_city[artist_id])
+        # print(artist_id, ': ', list(enumerate(artist_ids_to_city[artist_id])))
+    
+    # print(artist_ids_to_city)
+
+    # write out results to a file
+    with open(outfile, 'w') as f:
+        f.write('Artist_ID, City List\n')
+        for artist_id in artist_ids_to_city.keys():
+            # print(artist_id, ',', artist_ids_to_city[artist_id])
+            artist_mapping = artist_id + ',' + str(artist_ids_to_city[artist_id])
+            f.write(artist_mapping + '\n')
+            print(artist_mapping)
 
 
 def main():
@@ -157,6 +228,8 @@ def main():
     # create_city_state_list('city_artists_file_cleaned.txt', 'city_states.txt', 'zip_codes_states.csv')
 
     # clean_spotify_artists_genres('artists_genres_test.csv', 'artists_genres_cleaned.csv')
+
+    map_city_to_genres("artists_genres_cleaned.csv", "city_artists_file_cleaned.txt", "artists_to_cities.txt")
 
 if __name__ == "__main__":
     main()

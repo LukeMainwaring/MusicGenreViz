@@ -213,12 +213,16 @@ def map_city_to_genres(artists_genres_file, city_state_artists_file, outfile):
 
     # write out results to a file
     with open(outfile, 'w') as f:
-        f.write('Artist_ID, City List\n')
+        f.write('Artist_ID,City,State\n')
         for artist_id in artist_ids_to_city.keys():
+            for city_state in artist_ids_to_city[artist_id]:
+                city, state = city_state[0], city_state[1]
+                # print(city, state)
+                f.write(artist_id + ',' + city + ',' + state + '\n')
             # print(artist_id, ',', artist_ids_to_city[artist_id])
-            artist_mapping = artist_id + ',' + str(artist_ids_to_city[artist_id])
-            f.write(artist_mapping + '\n')
-            print(artist_mapping)
+            # artist_mapping = artist_id + ',' + str(artist_ids_to_city[artist_id])
+            # f.write(artist_mapping + '\n')
+            # print(artist_mapping)
 
 
 def main():

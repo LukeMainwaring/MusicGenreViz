@@ -16,8 +16,8 @@ CREATE TABLE IF NOT EXISTS city (
     city_id           INT         NOT NULL AUTO_INCREMENT,
     city_name         VARCHAR(50) NOT NULL,
     city_state        VARCHAR(50) NOT NULL,
-    city_lat          FLOAT       NOT NULL,
-    city_lon          FLOAT       NOT NULL,
+    lat               FLOAT       NOT NULL,
+    lon               FLOAT       NOT NULL,
     PRIMARY KEY (city_id)
 );
 

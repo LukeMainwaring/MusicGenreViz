@@ -141,6 +141,15 @@ def clean_spotify_artists_genres(filename, clean_filename):
                 # print(line)
             # print(artists_data[-1])
 
+def map_city_to_genres(artists_genres_file, city_state_artist_file, outfile):
+
+    # create mapping from artist to artist's genres
+    artist_to_genre = {}
+    with open(artists_genres_file, 'r') as f:
+        for line in f:
+            print(line)
+
+
 def main():
     # remove_empty_cities("city_artists_file.txt", "city_artists_file2.txt", 
     #    "city_artists_file3.txt", "city_artists_file_cleaned.txt")

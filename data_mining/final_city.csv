@@ -1,0 +1,330 @@
+city_id,city_name,city_state,lat,lon
+0,San Juan,Puerto Rico,18.465901,66.10356
+1,Bayamon,Puerto Rico,18.326702,66.17416999999999
+2,Carolina,Puerto Rico,18.410462,66.06053
+3,Amherst,Massachusetts,42.367092,72.46457
+4,Worcester,Massachusetts,42.265275,71.87941
+5,Boston,Massachusetts,42.370567,71.02696
+6,Brighton,Massachusetts,42.349768,71.10488000000002
+7,Cambridge,Massachusetts,42.380442,71.13294
+8,Somerville,Massachusetts,42.38092,71.09889
+9,Waltham,Massachusetts,42.398588,71.245
+10,North Attleboro,Massachusetts,41.964376,71.32644
+11,Coventry,Rhode Island,41.694251,71.63678
+12,Providence,Rhode Island,41.82275,71.41445
+13,Bath,Maine,43.867892,69.82649
+14,New Haven,Connecticut,41.365709,72.9275
+15,Stamford,Connecticut,41.054082,73.53621
+16,Clifton,New Jersey,40.877949,74.14123000000002
+17,North Bergen,New Jersey,40.789724,74.02323
+18,Passaic,New Jersey,40.855103,74.12691
+19,West New York,New Jersey,40.7888,74.01153000000002
+20,Jersey City,New Jersey,40.73276,74.07548
+21,Newark,New Jersey,40.736101,74.225
+22,Elizabeth,New Jersey,40.672052,74.18343
+23,Paterson,New Jersey,40.915045,74.17448
+24,Camden,New Jersey,39.80237,74.93825
+25,Trenton,New Jersey,40.280531,74.71200999999998
+26,Staten Island,New York,40.623632,74.09331999999998
+27,Bronx,New York,40.819329,73.92035
+28,Brooklyn,New York,40.694481,73.98931
+29,Jamaica,New York,40.651378,73.87077
+30,Queens Village,New York,40.729293,73.74981
+31,Garden City,New York,40.726801,73.63972
+32,Syracuse,New York,43.02143,76.1977
+33,Buffalo,New York,42.929303,78.8327
+34,Rochester,New York,43.286024,77.68426
+35,Ithaca,New York,42.402794,76.48399
+36,Pittsburgh,Pennsylvania,40.434436,80.02481
+37,Greensburg,Pennsylvania,40.347017,79.50072
+38,State College,Pennsylvania,40.881935,77.86782
+39,Lancaster,Pennsylvania,40.076553,76.3106
+40,Philadelphia,Pennsylvania,40.001811,75.1178
+41,Washington,District of Columbia,38.911936,77.01671
+42,Manassas,Virginia,38.744685,77.48716
+43,Laurel,Maryland,39.093136,76.88194
+44,College Park,Maryland,38.979495,76.89585
+45,Hyattsville,Maryland,38.94161,76.93744000000002
+46,Gaithersburg,Maryland,39.139336,77.18295
+47,Silver Spring,Maryland,39.036289,77.01094
+48,Baltimore,Maryland,39.296536,76.62348
+49,Gwynn Oak,Maryland,39.325605,76.73659
+50,Arlington,Virginia,38.88548400000001,77.09911
+51,Alexandria,Virginia,38.823062,77.07961999999998
+52,Harrisonburg,Virginia,38.422777,78.87713000000002
+53,Charlottesville,Virginia,38.093604,78.56113
+54,Richmond,Virginia,37.52424600000001,77.49315
+55,Norfolk,Virginia,36.895911,76.20852
+56,Newport News,Virginia,37.058296,76.46347
+57,Roanoke,Virginia,37.274175,79.9578
+58,Blacksburg,Virginia,37.256283,80.4347
+59,Lynchburg,Virginia,37.383112,79.17832
+60,Greensboro,North Carolina,36.055285,79.83169000000002
+61,Chapel Hill,North Carolina,36.004647,79.05447
+62,Raleigh,North Carolina,35.773755,78.60417
+63,Durham,North Carolina,36.004307,78.87546
+64,Charlotte,North Carolina,35.26002000000001,80.80415
+65,Fayetteville,North Carolina,35.053416,78.78102
+66,Wilmington,North Carolina,34.16350300000001,77.9548
+67,Asheville,North Carolina,35.602711,82.56728000000003
+68,Columbia,South Carolina,33.987454,81.02486
+69,Charleston,South Carolina,32.780326,79.94084000000002
+70,Greenville,South Carolina,34.848567,82.40287
+71,Clemson,South Carolina,34.75974,82.80215
+72,Westminster,South Carolina,34.696493,83.1535
+73,Norcross,Georgia,33.960353000000005,84.03785
+74,Alpharetta,Georgia,34.112373,84.302
+75,Marietta,Georgia,33.912473,84.55718
+76,Cumming,Georgia,34.193041,84.09258
+77,Decatur,Georgia,33.772554,84.29172
+78,Lawrenceville,Georgia,33.929464,84.10322
+79,Stone Mountain,Georgia,33.786405,84.20340999999998
+80,Acworth,Georgia,34.023398,84.67378000000002
+81,Atlanta,Georgia,33.844371,84.47399999999999
+82,Athens,Georgia,33.992902,83.35369
+83,Augusta,Georgia,33.456687,81.96918000000002
+84,Savannah,Georgia,32.072257,81.13561
+85,Jacksonville,Florida,30.337538,81.76862
+86,Tallahassee,Florida,30.418514,84.20336999999998
+87,Pensacola,Florida,30.424838,87.25647
+88,Gainesville,Florida,29.68041,82.34573
+89,Orlando,Florida,28.545179,81.37329
+90,Hialeah,Florida,25.558428,80.45815999999998
+91,Hollywood,Florida,26.091514,80.19296
+92,Pompano Beach,Florida,26.240059,80.13981
+93,Miami,Florida,25.779076,80.1978
+94,Fort Lauderdale,Florida,26.085115,80.15930999999998
+95,West Palm Beach,Florida,26.672643,80.07061
+96,Tampa,Florida,27.996097,82.58203
+97,Saint Petersburg,Florida,27.775654,82.6409
+98,Lakeland,Florida,28.059997,81.95612
+99,Fort Myers,Florida,26.564355,81.92506
+100,Naples,Florida,25.855534,81.3871
+101,Bradenton,Florida,27.404731,82.47045
+102,Sarasota,Florida,27.335023,82.53716
+103,Ocala,Florida,29.238672,82.1694
+104,Kissimmee,Florida,28.307138,81.46138
+105,Birmingham,Alabama,33.456412,86.8019
+106,Tuscaloosa,Alabama,33.241899,87.59759
+107,Huntsville,Alabama,34.718428,86.55643
+108,Montgomery,Alabama,32.356988,86.25780999999998
+109,Mobile,Alabama,30.701142,88.10318000000002
+110,Auburn,Alabama,32.547542,85.46822
+111,Franklin,Tennessee,35.890746,86.96569000000002
+112,Murfreesboro,Tennessee,35.762951,86.37215
+113,Cleveland,Tennessee,35.149223,84.87403
+114,Chattanooga,Tennessee,35.017818,85.20642
+115,Memphis,Tennessee,35.169255,89.99041
+116,Knoxville,Tennessee,36.03233400000001,83.8848
+117,Crossville,Tennessee,35.962348,85.05143000000002
+118,Ridgeland,Mississippi,32.436064,90.1373
+119,Jackson,Mississippi,32.291095,90.19268
+120,Hattiesburg,Mississippi,31.245138,89.2807
+121,Louisville,Kentucky,38.188962,85.67681
+122,Lexington,Kentucky,38.016674,84.48604
+123,Erlanger,Kentucky,39.01968400000001,84.59138
+124,Dublin,Ohio,39.969036,83.01138
+125,Columbus,Ohio,40.040113,82.89721999999998
+126,Mount Sterling,Ohio,39.765249,83.34483
+127,Marion,Ohio,40.616604,83.06929000000002
+128,Toledo,Ohio,41.72068400000001,83.56935
+129,Cleveland,Ohio,41.523401,81.59964000000002
+130,Akron,Ohio,41.012239,81.50783
+131,Cincinnati,Ohio,39.166759000000006,84.5382
+132,Fairborn,Ohio,39.728549,84.01483
+133,Dayton,Ohio,39.75047100000001,84.26859
+134,Indianapolis,Indiana,39.775092,86.1321
+135,Fort Wayne,Indiana,41.093763,85.07070999999998
+136,Bloomington,Indiana,39.07881,86.43509
+137,West Lafayette,Indiana,40.467303,86.92813000000002
+138,Ann Arbor,Michigan,42.266638,83.84904
+139,Taylor,Michigan,42.245837,83.24906
+140,Southgate,Michigan,42.257801,83.28593000000002
+141,Detroit,Michigan,42.239933,83.15082
+142,Farmington,Michigan,42.505138,83.40723
+143,East Lansing,Michigan,42.737334,84.50352
+144,Ames,Iowa,42.037879,93.60025
+145,Pella,Iowa,41.341915,93.09279
+146,Des Moines,Iowa,41.672687,93.57217
+147,Dubuque,Iowa,42.458876,90.87713
+148,Baldwin,Iowa,42.120007,90.81634
+149,Iowa City,Iowa,41.648207,91.54157
+150,Cedar Rapids,Iowa,41.976612,91.65757
+151,Milwaukee,Wisconsin,43.011264,87.9584
+152,Janesville,Wisconsin,42.710981,89.1122
+153,Stoughton,Wisconsin,42.931289,89.16835
+154,Madison,Wisconsin,43.06956,89.42385999999998
+155,Eau Claire,Wisconsin,44.75653,91.47309
+156,Saint Paul,Minnesota,44.967965,93.09216
+157,Arlington Heights,Illinois,42.085626,87.9982
+158,Palatine,Illinois,42.097976,88.01406999999998
+159,Elmhurst,Illinois,41.88353,87.94641
+160,Berwyn,Illinois,41.811929,87.6873
+161,Naperville,Illinois,41.759029,88.15238000000002
+162,Chicago,Illinois,41.811929,87.6873
+163,Rockford,Illinois,42.33342,89.15719
+164,Kansas City,Missouri,39.102404,94.59858
+165,Springfield,Missouri,37.25807,93.34367
+166,Wichita,Kansas,37.651974,97.25899
+167,Omaha,Nebraska,41.291736,96.1711
+168,Lincoln,Nebraska,40.865142,96.82313
+169,Metairie,Louisiana,29.984643,90.16182
+170,New Orleans,Louisiana,29.958304,90.07
+171,Lafayette,Louisiana,30.232955,92.06657
+172,Baton Rouge,Louisiana,30.449240000000003,91.1856
+173,Edmond,Oklahoma,35.674777,97.49968
+174,Oklahoma City,Oklahoma,35.491608,97.56281
+175,Austin,Texas,30.326374,97.77125
+176,Stillwater,Oklahoma,36.10152100000001,97.06906
+177,Tulsa,Oklahoma,36.039147,95.86866
+178,Wilburton,Oklahoma,34.855219,95.28771
+179,Carrollton,Texas,32.767268,96.77762
+180,Irving,Texas,32.767268,96.77762
+181,Plano,Texas,33.104885,96.65957
+182,Frisco,Texas,33.152221999999995,96.79643
+183,Garland,Texas,32.931523,96.61582
+184,Sachse,Texas,32.950371999999994,96.5753
+185,Grand Prairie,Texas,32.767268,96.77762
+186,The Colony,Texas,33.077136,96.9016
+187,Richardson,Texas,32.962811,96.72682
+188,Mesquite,Texas,32.777778999999995,96.6231
+189,Dallas,Texas,32.781178999999995,96.79032
+190,Arlington,Texas,32.771419,97.29148
+191,Burleson,Texas,32.492683,97.26435
+192,Fort Worth,Texas,32.771419,97.29148
+193,Denton,Texas,33.244683,97.20055
+194,Killeen,Texas,31.085833,97.35709
+195,San Angelo,Texas,31.44451,-100.533397
+196,Houston,Texas,29.813142,95.30978
+197,Humble,Texas,29.833990000000004,95.43424
+198,Spring,Texas,29.833990000000004,95.43424
+199,Cypress,Texas,29.833990000000004,95.43424
+200,Katy,Texas,29.833990000000004,95.43424
+201,College Station,Texas,30.582241,96.28932
+202,Laredo,Texas,27.515879,99.49407
+203,New Braunfels,Texas,29.776488,98.22104
+204,San Antonio,Texas,29.399933,98.53749
+205,Corpus Christi,Texas,27.759399,97.64815
+206,Mcallen,Texas,26.269305,98.22436
+207,Brownsville,Texas,26.052155,97.51446
+208,Pharr,Texas,26.186698,98.12776
+209,San Marcos,Texas,29.972907,97.99716
+210,Amarillo,Texas,35.205452,-101.795512
+211,Lubbock,Texas,33.607701,-101.842056
+212,Abilene,Texas,32.344457,99.8021
+213,Midland,Texas,31.861876,-102.091276
+214,Odessa,Texas,31.765163,-102.354346
+215,El Paso,Texas,31.763608,-106.484592
+216,Aurora,Colorado,39.715287,-104.84748
+217,Littleton,Colorado,39.597937,-105.010182
+218,Denver,Colorado,39.726303,-104.856808
+219,Boulder,Colorado,40.094787,-105.278083
+220,Fort Collins,Colorado,40.59227,-105.298344
+221,Colorado Springs,Colorado,38.861469,-104.857828
+222,Cheyenne,Wyoming,41.25173,-104.56264
+223,Rexburg,Idaho,43.79132,-111.771375
+224,Boise,Idaho,43.603768,-116.272921
+225,Orem,Utah,40.311353,-111.72496
+226,Salt Lake City,Utah,40.756095,-111.900719
+227,Ogden,Utah,41.244261,-112.007924
+228,Provo,Utah,40.235053,-111.695558
+229,Phoenix,Arizona,33.703967,-112.351835
+230,Mesa,Arizona,33.440695,-111.856967
+231,Chandler,Arizona,33.298461,-111.85062
+232,Gilbert,Arizona,33.335401,-111.815281
+233,Scottsdale,Arizona,33.524143,-111.874248
+234,Tempe,Arizona,33.401395,-111.931298
+235,Tucson,Arizona,32.217975,-110.970869
+236,Flagstaff,Arizona,35.932116,-111.597853
+237,Albuquerque,New Mexico,35.199592,-106.644831
+238,Las Vegas,Nevada,36.17372,-115.10647
+239,Reno,Nevada,39.65558,-119.704614
+240,Los Angeles,California,33.973951,-118.248405
+241,Beverly Hills,California,33.786594,-118.298662
+242,Compton,California,33.874815000000005,-118.240208
+243,Downey,California,33.786594,-118.298662
+244,Maywood,California,33.988463,-118.187376
+245,Santa Monica,California,33.786594,-118.298662
+246,Torrance,California,33.83566500000001,-118.303805
+247,Whittier,California,34.004311,-118.0441
+248,Buena Park,California,33.640302,-117.769442
+249,La Mirada,California,33.786594,-118.298662
+250,Norwalk,California,33.906763,-118.076549
+251,Wilmington,California,33.779416999999995,-118.253853
+252,Long Beach,California,33.804309,-118.200957
+253,Northridge,California,33.786594,-118.298662
+254,Pacoima,California,33.786594,-118.298662
+255,North Hills,California,33.786594,-118.298662
+256,Woodland Hills,California,33.786594,-118.298662
+257,Van Nuys,California,33.786594,-118.298662
+258,North Hollywood,California,33.786594,-118.298662
+259,Rancho Cucamonga,California,34.839964,-115.967051
+260,Baldwin Park,California,33.786594,-118.298662
+261,Covina,California,33.786594,-118.298662
+262,La Puente,California,33.786594,-118.298662
+263,Ontario,California,34.839964,-115.967051
+264,Pomona,California,33.786594,-118.298662
+265,West Covina,California,33.786594,-118.298662
+266,Chula Vista,California,33.016928,-116.846046
+267,Escondido,California,33.05712800000001,-117.083403
+268,Oceanside,California,33.016928,-116.846046
+269,San Diego,California,32.7211,-117.174366
+270,Fontana,California,34.839964,-115.967051
+271,San Bernardino,California,34.839964,-115.967051
+272,Riverside,California,33.752886,-116.055617
+273,Moreno Valley,California,33.752886,-116.055617
+274,Perris,California,33.752886,-116.055617
+275,Temecula,California,33.752886,-116.055617
+276,Irvine,California,33.718018,-117.72222
+277,Huntington Beach,California,33.640302,-117.769442
+278,Costa Mesa,California,33.6829,-117.778398
+279,Santa Ana,California,33.640302,-117.769442
+280,Anaheim,California,33.640302,-117.769442
+281,Fullerton,California,33.640302,-117.769442
+282,Garden Grove,California,33.640302,-117.769442
+283,Orange,California,33.640302,-117.769442
+284,Corona,California,33.752886,-116.055617
+285,Oxnard,California,34.224892,-119.17749
+286,Bakersfield,California,35.48350100000001,-119.007662
+287,San Luis Obispo,California,35.265573,-120.62122
+288,Palmdale,California,33.786594,-118.298662
+289,Fresno,California,36.8411,-119.801015
+290,Salinas,California,36.441768,-121.416603
+291,Daly City,California,37.686389,-122.468333
+292,Menlo Park,California,37.439616,-122.186373
+293,San Francisco,California,37.784827,-122.727802
+294,Sacramento,California,38.380456,-121.555406
+295,San Mateo,California,37.573485,-122.32253
+296,Antioch,California,37.931997,-121.906748
+297,Fremont,California,37.565285,-121.982721
+298,Hayward,California,37.680181,-121.921498
+299,Livermore,California,37.676781,-121.91605
+300,San Leandro,California,37.715629,-122.158621
+301,Vallejo,California,38.15822100000001,-122.280383
+302,Oakland,California,37.786027,-122.223779
+303,Berkeley,California,37.860576,-122.29673
+304,Santa Cruz,California,37.052748,-122.111126
+305,San Jose,California,37.189396,-121.705327
+306,Stockton,California,37.672196,-121.298794
+307,Elk Grove,California,38.44148,-121.307142
+308,Roseville,California,38.74073,-121.25603
+309,Chico,California,39.74615900000001,-121.840083
+310,Penn Valley,California,39.21656,-121.117883
+311,Redding,California,40.675738,-122.456982
+312,Waipahu,Hawaii,21.399548,-158.015151
+313,Honolulu,Hawaii,24.859832,-168.021815
+314,Portland,Oregon,45.498931,-122.693157
+315,Eugene,Oregon,44.117868,-123.074193
+316,Bend,Oregon,44.082037,-121.227125
+317,Auburn,Washington,47.465495,-121.821908
+318,Federal Way,Washington,47.432251,-121.80338799999998
+319,Kent,Washington,47.379972,-122.16538
+320,Kirkland,Washington,47.673263,-122.187029
+321,Redmond,Washington,47.678756,-122.121034
+322,Renton,Washington,47.485348,-122.02967
+323,Seattle,Washington,47.432251,-121.80338799999998
+324,Puyallup,Washington,47.212822,-122.317148
+325,Tacoma,Washington,47.253671,-122.444335
+326,Vancouver,Washington,45.74327,-122.713366
+327,Spokane,Washington,47.66264,-117.435997
+328,Anchorage,Alaska,61.287624,-149.486981

@@ -6,6 +6,10 @@ div {
     text-align:center
 }
 
+li {
+    text-align: left;
+}
+
 .slidecontainer {
     width: 80%;  /*Width of the outside container*/
     margin: auto;

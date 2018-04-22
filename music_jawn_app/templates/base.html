@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
     {% block head %}
         <title>{% block title %}{{ title }}{% endblock %} | Music Jawn</title>
     {% endblock %}
@@ -20,7 +21,7 @@
     
     {% block footer %}
         <footer>
-            <p>Made by Kerry Hollis, Evan Jonokuchi, Luke Mainwaring, and Hannah Stulberg. Spring 2017.</p>
+            <p>Made by Kerry Hollis, Evan Jonokuchi, Luke Mainwaring, and Hannah Stulberg. Spring 2018.</p>
         </footer>
     {% endblock %}
 

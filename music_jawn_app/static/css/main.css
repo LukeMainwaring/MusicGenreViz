@@ -1,0 +1,57 @@
+span {
+    display:inline-block;
+}
+
+div {
+    text-align:center
+}
+
+.slidecontainer {
+    width: 80%;  /*Width of the outside container*/
+    margin: auto;
+}
+
+/* The slider itself */
+.slider {
+    -webkit-appearance: none;
+    margin: auto;
+    width: 100%; /* Full-width */
+    height: 15px; /* Specified height */
+    border-radius: 5px;   
+    background: #191414; /* Spotify black */
+    outline: none;
+    opacity: 0.7; 
+    margin: auto;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px; /* Set a specific slider handle width */
+    height: 30px; /* Slider handle height */
+    border-radius: 50%; 
+    background: #1db954;  /* Spotify green */
+    cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+    width: 30px; /* Set a specific slider handle width */
+    height: 30px;
+    border-radius: 50%;
+    background: #1db954; /* Spotify green */
+    cursor: pointer;
+}
+
+.inl {
+    display: inline;   
+    width: 100px;
+    height: 20px;
+    border: 2px solid red;
+}

@@ -42,13 +42,17 @@ def map():
         sql = '''SELECT * FROM city;'''
         cursor.execute(sql)
         result = cursor.fetchall()
-        for city in result:
-            print(city)
+        city_data = [city for city in result]
+        # print(city_data)
 
-    context = {
-        'title': 'Map',
-    }
-    return render_template('map.html', **context)
+    #context = {
+    #    'title': 'Map',
+    #    'city_data': city_data,
+    #}
+    #return render_template('map.html', **context)
+
+    # testing without context and title
+    return render_template('map.html', city_data=city_data)
 
 
 @app.route("/timeline/")

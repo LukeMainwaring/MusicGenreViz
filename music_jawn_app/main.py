@@ -10,6 +10,7 @@ from flask import Flask, render_template
 from flask_bootstrap import Bootstrap
 import pymysql
 import pymysql.cursors
+from flask_table import Table, Col
 
 # Connect to the database
 connection = pymysql.connect(host='cis550-2.cmxt8otwhjqc.us-east-2.rds.amazonaws.com',
@@ -54,6 +55,10 @@ def map():
     # testing without context and title
     return render_template('map.html', city_data=city_data)
 
+# Declare your table
+class ItemTable(Table):
+    name = Col('Name')
+    description = Col('Description')
 
 @app.route("/timeline/")
 def timeline():

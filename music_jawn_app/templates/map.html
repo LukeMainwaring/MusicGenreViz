@@ -11,7 +11,7 @@
 {% endblock %}
 
 {% block content %}
-    <h3>My Google Maps Demo</h3>
+    <h3>Music Genre Popularity By City</h3>
     <div id="map"></div>
     <script>
         function initMap() {
@@ -52,12 +52,12 @@
                 return function() {
                   infowindow.setContent('<div id="content">'+
                     '<h1>' + city_info[i].name + ', ' + city_info[i].state + '</h1>'
-                    +'<h3>Most popular genres in this city</h3>'
+                    +'<h3>Ten most popular genres in ' + city_info[i].name + ', ' + city_info[i].state + ': </h3>'
                     +'<div id="bodyContent">'
                     +'<ol>'
-                    +'<li>Rap: 34% </li>'
-                    +'<li>Country: 17% </li>'
-                    +'<li> ... </li>'
+                    +'<li style="text-align: left">Rap: 34% </li>'
+                    +'<li style="text-align: left">Country: 17% </li>'
+                    +'<li style="text-align: left"> ... </li>'
                     +'</ol>'
                     +'</div>'
                     +'</div>');

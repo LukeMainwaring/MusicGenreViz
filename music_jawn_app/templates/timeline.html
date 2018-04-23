@@ -6,26 +6,110 @@
 {% endblock %}
 
 {% block content %}
- 	<h3>Genre Popularity Over Time</h3>
+ 	<h3>Music Genre Popularity Over Time</h3>
+
     <div>
-		<p>Top 10 Most Popular Genres in <span class="demo"></p>
- 		
- 		<ul>
- 			{% for d in timeline_data %}
- 			<li><b>Genre:</b> {{d.genre}} <b>Percent:</b> {{d.percent}}</li>
- 			{% endfor %}
- 		</ul>
+		<p>Top 10 most popular genres in <span class="demo"></p>
+ 		<ol>
+ 			<!-- <li tyle="text-align: center; list-style-position: inside;"><b>Genre:</b> <span class="genre1"></span> <b>Percent:</b> <span class="percent1"></span> </li> -->
+ 			<li> <span class="percent1"></span>%  <b style="padding-left: 25px">Genre:</b> <span class="genre1" ></span> </li>
+ 			<li> <span class="percent2"></span>%  <b style="padding-left: 25px">Genre:</b> <span class="genre2" ></span> </li>
+  			<li> <span class="percent3"></span>%  <b style="padding-left: 25px">Genre:</b> <span class="genre3" ></span> </li>
+ 			<li> <span class="percent4"></span>%  <b style="padding-left: 25px">Genre:</b> <span class="genre4" ></span> </li>
+ 			<li> <span class="percent5"></span>%  <b style="padding-left: 25px">Genre:</b> <span class="genre5" ></span> </li>
+ 			<li> <span class="percent6"></span>%  <b style="padding-left: 25px">Genre:</b> <span class="genre6" ></span> </li>
+  			<li> <span class="percent7"></span>%  <b style="padding-left: 25px">Genre:</b> <span class="genre7" ></span> </li>
+ 			<li> <span class="percent8"></span>%  <b style="padding-left: 25px">Genre:</b> <span class="genre8" ></span> </li>
+ 			<li> <span class="percent9"></span>%  <b style="padding-left: 25px">Genre:</b> <span class="genre9" ></span> </li>
+ 			<li> <span class="percent10"></span>%  <b style="padding-left: 25px">Genre:</b> <span class="genre10" ></span> </li>
+
+ 		</ol>
  		
 	</div>
 
 	<div>
-	<span><p> Min Year </p></span>
+	<span><p> 1959 </p></span>
 	<span class="slidecontainer">
   		<input type="range" min="1959" max="2018" value="1990" class="slider" id="myRange">
 	</span>
-	<span><p> Max Year </p></span>
+	<span><p> 2018 </p></span>
 	<p>Year: <span class="demo"></span></p>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-	<script src="../static/js/main.js"></script>
+    
+    <script>
+
+
+		
+	var slider = document.getElementById("myRange");
+	//var output = document.getElementById("demo");
+	//output.innerHTML = slider.value; // Display the default slider value
+	$(".demo").text(slider.value)
+	
+	var year = 31;
+	var genre_data = []
+	var percent_data = []
+	{% for d in timeline_data %}
+		// year_data.push("{{ d.genres }}");
+		{% for g in d.genres %}
+			genre_data.push("{{ g.genre }}");
+			percent_data.push("{{ g.percent }}");
+		{% endfor %}
+	{% endfor %}
+
+	$(".genre1").text(genre_data[year])
+	$(".genre2").text(genre_data[year+1])
+	$(".genre3").text(genre_data[year+2])
+	$(".genre4").text(genre_data[year+3])
+	$(".genre5").text(genre_data[year+4])
+	$(".genre6").text(genre_data[year+5])
+	$(".genre7").text(genre_data[year]+6)
+	$(".genre8").text(genre_data[year+7])
+	$(".genre9").text(genre_data[year+8])
+	$(".genre10").text(genre_data[year+9])
+	$(".percent1").text(percent_data[year])
+	$(".percent2").text(percent_data[year+1])
+	$(".percent3").text(percent_data[year+2])
+	$(".percent4").text(percent_data[year+3])
+	$(".percent5").text(percent_data[year+4])
+	$(".percent6").text(percent_data[year+5])
+	$(".percent7").text(percent_data[year+6])
+	$(".percent8").text(percent_data[year+7])
+	$(".percent9").text(percent_data[year+8])
+	$(".percent10").text(percent_data[year+9])
+
+
+	// Update the current slider value (each time you drag the slider handle)
+	slider.oninput = function() {
+	    $(".demo").text(slider.value)
+	    // Access correct index in data array
+		var year = slider.value - 1959
+
+		$(".genre1").text(genre_data[year])
+		$(".genre2").text(genre_data[year+1])
+		$(".genre3").text(genre_data[year+2])
+		$(".genre4").text(genre_data[year+3])
+		$(".genre5").text(genre_data[year+4])
+		$(".genre6").text(genre_data[year+5])
+		$(".genre7").text(genre_data[year]+6)
+		$(".genre8").text(genre_data[year+7])
+		$(".genre9").text(genre_data[year+8])
+		$(".genre10").text(genre_data[year+9])
+		$(".percent1").text(percent_data[year])
+		$(".percent2").text(percent_data[year+1])
+		$(".percent3").text(percent_data[year+2])
+		$(".percent4").text(percent_data[year+3])
+		$(".percent5").text(percent_data[year+4])
+		$(".percent6").text(percent_data[year+5])
+		$(".percent7").text(percent_data[year+6])
+		$(".percent8").text(percent_data[year+7])
+		$(".percent9").text(percent_data[year+8])
+		$(".percent10").text(percent_data[year+9])
+		
+	}    	
+
+    </script>
+
+
+	<!-- <script src="../static/js/main.js"></script> -->
 {% endblock %}

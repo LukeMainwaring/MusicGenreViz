@@ -39,8 +39,12 @@
               } else {
                 city_lng = {{ city.lon }} * -1;
               }
+              genre_info = [];
+              {% for g in city.genres %}
+                genre_info.push({ genre: "{{ g.genre }}", percent: "{{ g.percent * 100 }}" });
+              {% endfor %}
               
-              city_info.push({ id: city_id, name: city_name, state: city_state });
+              city_info.push({ id: city_id, name: city_name, state: city_state, genres: genre_info });
               
               marker = new google.maps.Marker({
                 position: new google.maps.LatLng(city_lat, city_lng),
@@ -48,16 +52,23 @@
               });
 
               google.maps.event.addListener(marker, 'click', (function(marker, i) {
-                var test = city_name
                 return function() {
+
                   infowindow.setContent('<div id="content">'+
                     '<h1>' + city_info[i].name + ', ' + city_info[i].state + '</h1>'
                     +'<h3>Ten most popular genres in ' + city_info[i].name + ', ' + city_info[i].state + ': </h3>'
                     +'<div id="bodyContent">'
                     +'<ol>'
-                    +'<li style="text-align: left">Rap: 34% </li>'
-                    +'<li style="text-align: left">Country: 17% </li>'
-                    +'<li style="text-align: left"> ... </li>'
+                    +'<li style="text-align: left"><b>Percent: </b>' + city_info[i].genres[0].percent + ' <b>Genre: </b>' + city_info[i].genres[0].genre + '</li>'
+                    +'<li style="text-align: left"><b>Percent: </b>' + city_info[i].genres[1].percent + ' <b>Genre: </b>' + city_info[i].genres[1].genre + '</li>'
+                    +'<li style="text-align: left"><b>Percent: </b>' + city_info[i].genres[2].percent + ' <b>Genre: </b>' + city_info[i].genres[2].genre + '</li>'
+                    +'<li style="text-align: left"><b>Percent: </b>' + city_info[i].genres[3].percent + ' <b>Genre: </b>' + city_info[i].genres[3].genre + '</li>'
+                    +'<li style="text-align: left"><b>Percent: </b>' + city_info[i].genres[4].percent + ' <b>Genre: </b>' + city_info[i].genres[4].genre + '</li>'
+                    +'<li style="text-align: left"><b>Percent: </b>' + city_info[i].genres[5].percent + ' <b>Genre: </b>' + city_info[i].genres[5].genre + '</li>'
+                    +'<li style="text-align: left"><b>Percent: </b>' + city_info[i].genres[6].percent + ' <b>Genre: </b>' + city_info[i].genres[6].genre + '</li>'
+                    +'<li style="text-align: left"><b>Percent: </b>' + city_info[i].genres[7].percent + ' <b>Genre: </b>' + city_info[i].genres[7].genre + '</li>'
+                    +'<li style="text-align: left"><b>Percent: </b>' + city_info[i].genres[8].percent + ' <b>Genre: </b>' + city_info[i].genres[8].genre + '</li>'
+                    +'<li style="text-align: left"><b>Percent: </b>' + city_info[i].genres[9].percent + ' <b>Genre: </b>' + city_info[i].genres[9].genre + '</li>'                                 
                     +'</ol>'
                     +'</div>'
                     +'</div>');
@@ -66,30 +77,6 @@
               })(marker, i));
               i++;
             {% endfor %}
-
-            /*
-            var contentString = '<div id="content">'+
-            '<div id="siteNotice">'+
-            '</div>'+
-            '<h1 id="firstHeading" class="firstHeading">Uluru</h1>'+
-            '<div id="bodyContent">'+
-            '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
-            'sandstone rock formation in the southern part of the '+
-            'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
-            'south west of the nearest large town, Alice Springs; 450&#160;km '+
-            '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
-            'features of the Uluru - Kata Tjuta National Park. Uluru is '+
-            'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
-            'Aboriginal people of the area. It has many springs, waterholes, '+
-            'rock caves and ancient paintings. Uluru is listed as a World '+
-            'Heritage Site.</p>'+
-            '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
-            'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
-            '(last visited June 22, 2009).</p>'+
-            '</div>'+
-            '</div>';
-            */
-
 
         }
     </script>

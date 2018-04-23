@@ -1,11 +1,15 @@
 SELECT 
-    ag.genre, 
-    COUNT(*)/(SELECT num_genres FROM genre_by_year WHERE year = {year}) AS percent
-FROM artist_rank ar
-NATURAL JOIN artist_genre ag
-WHERE year = {year}
-GROUP BY
+    genre, 
+    COUNT(*)/(
+        SELECT 
+            COUNT(*) 
+        FROM (SELECT * FROM artist_rank NATURAL JOIN artist_genre WHERE year = {year}) t1
+    ) AS percent
+FROM
+    (SELECT * FROM artist_rank NATURAL JOIN artist_genre WHERE year = {year}) t2
+GROUP BY 
     genre
 ORDER BY 
     percent DESC
 LIMIT 10
+;

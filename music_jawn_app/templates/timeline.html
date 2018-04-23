@@ -9,6 +9,7 @@
  	<h3>Genre Popularity Over Time</h3>
     <div>
 		<p>Top 10 Most Popular Genres in <span class="demo"></p>
+ 		
  		<ul>
  			{% for d in timeline_data %}
  			<li><b>Genre:</b> {{d.genre}} <b>Percent:</b> {{d.percent}}</li>
@@ -20,7 +21,7 @@
 	<div>
 	<span><p> Min Year </p></span>
 	<span class="slidecontainer">
-  		<input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+  		<input type="range" min="1959" max="2018" value="1990" class="slider" id="myRange">
 	</span>
 	<span><p> Max Year </p></span>
 	<p>Year: <span class="demo"></span></p>

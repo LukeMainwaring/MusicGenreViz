@@ -9,16 +9,12 @@
  	<h3>Genre Popularity Over Time</h3>
     <div>
 		<p>Top 10 Most Popular Genres in <span class="demo"></p>
-		<p>Genre 1: X</p>
-		<p>Genre 2: X</p>
-		<p>Genre 3: X</p>
-		<p>Genre 4: X</p>
-		<p>Genre 5: X</p>
-		<p>Genre 6: X</p>
-		<p>Genre 7: X</p>
-		<p>Genre 8: X</p>
-		<p>Genre 9: X</p>
-		<p>Genre 10: X</p>
+ 		<ul>
+ 			{% for d in data %}
+ 			<li><b>Genre:</b> {{d.genre}} <b>Percent:</b> {{d.percent}}</li>
+ 			{% endfor %}
+ 		</ul>
+ 		
 	</div>
 
 	<div>

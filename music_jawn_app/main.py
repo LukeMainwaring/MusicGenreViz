@@ -10,6 +10,7 @@ from flask import Flask, render_template
 from flask_bootstrap import Bootstrap
 import pymysql
 import pymysql.cursors
+from flask_table import Table, Col
 
 # Connect to the database
 connection = pymysql.connect(host='cis550-2.cmxt8otwhjqc.us-east-2.rds.amazonaws.com',
@@ -54,10 +55,24 @@ def map():
     # testing without context and title
     return render_template('map.html', city_data=city_data)
 
+# Declare your table
+class ItemTable(Table):
+    name = Col('Name')
+    description = Col('Description')
 
 @app.route("/timeline/")
 def timeline():
     context = {
         'title': 'Timeline',
+        'data' : [{'genre': 'pop', 'percent': 0.1611}, 
+                            {'genre': 'rap', 'percent': 0.1099},
+                            {'genre': 'trap music', 'percent': 0.0807},
+                            {'genre': 'dance pop', 'percent': 0.0597},
+                            {'genre': 'pop rap', 'percent': 0.0546},
+                            {'genre': 'post-teen pop', 'percent': 0.0524},
+                            {'genre': 'southern hip hop', 'percent': 0.0472},
+                            {'genre': 'contemporary country', 'percent': 0.0375},
+                            {'genre': 'hip hop', 'percent': 0.0341},
+                            {'genre': 'country road', 'percent': 0.0256}]
     }
     return render_template('timeline.html', **context)

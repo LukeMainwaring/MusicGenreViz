@@ -8,23 +8,13 @@ Starting point and main functionality of music jawn app.
 
 from flask import Flask, render_template
 from flask_bootstrap import Bootstrap
-import pymysql
-import pymysql.cursors
 from flask_table import Table, Col
 
-# Connect to the database
-connection = pymysql.connect(host='cis550-2.cmxt8otwhjqc.us-east-2.rds.amazonaws.com',
-                             db='cis550',
-                             user='cis550',
-                             password='cis550eklh',
-                             charset='utf8mb4',
-                             cursorclass=pymysql.cursors.DictCursor)
+import db
 
 
 app = Flask(__name__)
 Bootstrap(app)
-
-
 
 
 @app.route("/")
@@ -37,42 +27,23 @@ def home():
 
 @app.route("/map/")
 def map():
-    # test query
-    with connection.cursor() as cursor:
-        # Read a single record
-        sql = '''SELECT * FROM city;'''
-        cursor.execute(sql)
-        result = cursor.fetchall()
-        city_data = [city for city in result]
-        # print(city_data)
+    context = {
+        'title': 'Map',
+        'city_data': db.all_city_genres()
+    }
+    return render_template('map.html', **context)
 
-    #context = {
-    #    'title': 'Map',
-    #    'city_data': city_data,
-    #}
-    #return render_template('map.html', **context)
-
-    # testing without context and title
-    return render_template('map.html', city_data=city_data)
 
 # Declare your table
 class ItemTable(Table):
     name = Col('Name')
     description = Col('Description')
 
+
 @app.route("/timeline/")
 def timeline():
     context = {
         'title': 'Timeline',
-        'data' : [{'genre': 'pop', 'percent': 0.1611}, 
-                            {'genre': 'rap', 'percent': 0.1099},
-                            {'genre': 'trap music', 'percent': 0.0807},
-                            {'genre': 'dance pop', 'percent': 0.0597},
-                            {'genre': 'pop rap', 'percent': 0.0546},
-                            {'genre': 'post-teen pop', 'percent': 0.0524},
-                            {'genre': 'southern hip hop', 'percent': 0.0472},
-                            {'genre': 'contemporary country', 'percent': 0.0375},
-                            {'genre': 'hip hop', 'percent': 0.0341},
-                            {'genre': 'country road', 'percent': 0.0256}]
+        'timeline_data': db.all_year_genres()
     }
     return render_template('timeline.html', **context)

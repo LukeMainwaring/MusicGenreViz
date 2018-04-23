@@ -41,7 +41,7 @@
               }
               genre_info = [];
               {% for g in city.genres %}
-                genre_info.push({ genre: "{{ g.genre }}", percent: "{{ g.percent * 100 }}" });
+                genre_info.push({ genre: "{{ g.genre }}", percent: "{{ g.percent }}" });
               {% endfor %}
               
               city_info.push({ id: city_id, name: city_name, state: city_state, genres: genre_info });

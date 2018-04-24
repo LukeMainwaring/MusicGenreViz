@@ -10,7 +10,6 @@
     <div style="width: 25%; margin-left: auto; margin-right: auto;">
 		<p>Top 10 most popular genres in <span class="demo"></p>
  		<ol>
- 			<!-- <li tyle="text-align: center; list-style-position: inside;"><b>Genre:</b> <span class="genre1"></span> <b>Percent:</b> <span class="percent1"></span> </li> -->
  			<li> <span class="percent1"></span>%  <b style="padding-left: 25px">Genre:</b> <span class="genre1" ></span> </li>
  			<li> <span class="percent2"></span>%  <b style="padding-left: 25px">Genre:</b> <span class="genre2" ></span> </li>
   			<li> <span class="percent3"></span>%  <b style="padding-left: 25px">Genre:</b> <span class="genre3" ></span> </li>
@@ -23,9 +22,7 @@
  			<li> <span class="percent10"></span>%  <b style="padding-left: 25px">Genre:</b> <span class="genre10" ></span> </li>
 
  		</ol>
- 		
 	</div>
-</div>
 
 	<div>
 	<span><p> 1959 </p></span>
@@ -38,19 +35,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     
     <script>
-
-
 		
 	var slider = document.getElementById("myRange");
-	//var output = document.getElementById("demo");
-	//output.innerHTML = slider.value; // Display the default slider value
 	$(".demo").text(slider.value)
 	
 	var year = 31;
 	var genre_data = []
 	var percent_data = []
 	{% for d in timeline_data %}
-		// year_data.push("{{ d.genres }}");
 		{% for g in d.genres %}
 			genre_data.push("{{ g.genre }}");
 			percent_data.push("{{ g.percent }}");
@@ -84,7 +76,6 @@
 	    $(".demo").text(slider.value)
 	    // Access correct index in data array
 		year = slider.value - 1959
-		// console.log(year)
 		$(".genre1").text(genre_data[year*10])
 		$(".genre2").text(genre_data[year*10+1])
 		$(".genre3").text(genre_data[year*10+2])
@@ -109,7 +100,4 @@
 	}    	
 
     </script>
-
-
-	<!-- <script src="../static/js/main.js"></script> -->
 {% endblock %}
